@@ -128,7 +128,7 @@ namespace nation {
 	struct has_gas_attack;
 	struct has_gas_defence;
 
-constexpr int32_t max_count = 700;
+	constexpr int32_t max_count = 700;
 
 	class alignas(64) container {
 		 int32_t size_used = 0;

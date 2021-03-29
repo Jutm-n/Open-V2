@@ -27,7 +27,7 @@
       <WarningLevel>Level3</WarningLevel>
       <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\boost_1_68_0;$(ProjectDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\lib;$(ProjectDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CallingConvention>
       </CallingConvention>
       <ProgramDataBaseFileName>$(SolutionDir)..\open_v2_test_data\$(Configuration)\$(ProjectName).pdb</ProgramDataBaseFileName>

@@ -1,3 +1,6 @@
+#pragma warning( push )
+#pragma warning( disable : 4189 )
+
 class cb_item;
 ui::tagged_gui_object create_static_element(world_state& ws, ui::window_tag handle, ui::tagged_gui_object parent, cb_item& b);
 ui::tagged_gui_object create_static_element(world_state& ws, ui::icon_tag handle, ui::tagged_gui_object parent, cb_item& b);
@@ -482,3 +485,5 @@ inline ui::tagged_gui_object create_static_element(world_state& ws, ui::icon_tag
 	 ws.w.gui_m.flag_minimal_update();
 	 return res;
 }
+#pragma warning( pop )
+

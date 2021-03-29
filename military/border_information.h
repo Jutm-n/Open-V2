@@ -21,7 +21,7 @@ namespace border_information {
 	struct owner;
 	struct against;
 
-constexpr int32_t max_count = province::container_size;
+	constexpr int32_t max_count = province::container_size;
 
 	class alignas(64) container {
 		 int32_t size_used = 0;

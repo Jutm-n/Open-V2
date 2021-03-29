@@ -219,11 +219,14 @@ int main(int , char **) {
 	
 
 	file_system fs;
-	fs.set_root(u"D:\\programs\\V2");
-	fs.add_root(u"D:\\programs\\V2\\mod\\OpenV2");
+	fs.set_root(u"E:\\programs\\Victoria2");
+	fs.add_root(u"E:\\programs\\Victoria2\\mod\\OpenV2");
+	const char16_t* scenarioOutput = u"E:\\programs\\V2_scenario\\test_scenario.bin";
+	const char16_t* saveOutput = u"E:\\programs\\V2_scenario\\test_save_cmp.bin";
+
 	//ui::gui_manager gui_m(850, 650);
 
-	if(DWORD dwAttrib = GetFileAttributes((const wchar_t*)(u"D:\\VS2007Projects\\open_v2_test_data\\test_scenario.bin")); dwAttrib == INVALID_FILE_ATTRIBUTES) {
+	if(DWORD dwAttrib = GetFileAttributes((const wchar_t*)(scenarioOutput)); dwAttrib == INVALID_FILE_ATTRIBUTES) {
 		scenario::scenario_manager s1;
 
 		std::cout << "begin scenario read" << std::endl << std::flush;
@@ -250,7 +253,7 @@ int main(int , char **) {
 
 		std::cout << "begin serialize" << std::endl << std::flush;
 		serialization::serialize_file_header dummy;
-		serialization::serialize_to_file(u"D:\\VS2007Projects\\open_v2_test_data\\test_scenario.bin", true, dummy, s1);
+		serialization::serialize_to_file(scenarioOutput, true, dummy, s1);
 		std::cout << "end serialize" << std::endl << std::flush;
 	}
 
@@ -260,14 +263,14 @@ int main(int , char **) {
 
 	std::cout << "begin deserialize" << std::endl << std::flush;
 	concurrency::task_group tg;
-	serialization::deserialize_from_file(u"D:\\VS2007Projects\\open_v2_test_data\\test_scenario.bin", ws.s, tg);
+	serialization::deserialize_from_file(scenarioOutput, ws.s, tg);
 	tg.wait();
 	std::cout << "end deserialize" << std::endl << std::flush;
 
 	scenario::ready_scenario(ws.s, fs.get_root()); // ready gui fonts and sound
 	ready_world_state(ws);
 
-	if(DWORD dwAttrib = GetFileAttributes((const wchar_t*)(u"D:\\VS2007Projects\\open_v2_test_data\\test_save_cmp.bin")); dwAttrib == INVALID_FILE_ATTRIBUTES) {
+	if(DWORD dwAttrib = GetFileAttributes((const wchar_t*)(saveOutput)); dwAttrib == INVALID_FILE_ATTRIBUTES) {
 		
 
 
@@ -333,11 +336,11 @@ int main(int , char **) {
 
 		{
 			serialization::serialize_file_header dummy;
-			serialization::serialize_to_file(u"D:\\VS2007Projects\\open_v2_test_data\\test_save_cmp.bin", true, dummy, ws.w, ws);
+			serialization::serialize_to_file(saveOutput, true, dummy, ws.w, ws);
 		}
 	}
 
-	serialization::deserialize_from_file(u"D:\\VS2007Projects\\open_v2_test_data\\test_save_cmp.bin", ws.w, ws);
+	serialization::deserialize_from_file(saveOutput, ws.w, ws);
 
 	{
 		auto mod_thandle = text_data::get_existing_text_handle(ws.s.gui_m.text_data_sequences, "global_liberal_agitation");

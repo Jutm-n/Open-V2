@@ -27,8 +27,10 @@ void ui::gui_manager::destroy(tagged_gui_object g) {
 			g.object.associated_behavior->~gui_behavior();
 			concurrent_allocator<gui_behavior>().deallocate(g.object.associated_behavior, 1);
 		}
-		if(g.object.associated_behavior->associated_object == &(g.object))
-			g.object.associated_behavior->associated_object = nullptr;
+		if (g.object.associated_behavior != nullptr) {
+			if (g.object.associated_behavior->associated_object == &(g.object))
+				g.object.associated_behavior->associated_object = nullptr;
+		}
 		g.object.associated_behavior = nullptr;
 	}
 	const auto type_handle = g.object.type_dependant_handle.load(std::memory_order_relaxed);
