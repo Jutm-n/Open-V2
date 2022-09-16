@@ -216,12 +216,12 @@ auto fake_gobj_lookup() {
 }
 
 int main(int , char **) {
-	
 
 	file_system fs;
-	fs.set_root(u"E:\\programs\\Victoria2");
-	fs.add_root(u"E:\\programs\\Victoria2\\mod\\OpenV2");
-	const char16_t* scenarioOutput = u"E:\\programs\\V2_scenario\\test_scenario.bin";
+	//Edit these paths
+	fs.set_root(u"E:\\programs\\Victoria2"); //Path of Victoria 2 installation
+	fs.add_root(u"E:\\programs\\Victoria2\\mod\\OpenV2"); //Path of OpenV2 mod in above installation
+	const char16_t* scenarioOutput = u"E:\\programs\\V2_scenario\\test_scenario.bin"; // Paths for OpenV2
 	const char16_t* saveOutput = u"E:\\programs\\V2_scenario\\test_save_cmp.bin";
 
 	//ui::gui_manager gui_m(850, 650);
