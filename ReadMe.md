@@ -23,6 +23,7 @@ This license applies to all files in this distribution, except as noted below.
 
 The Eigen implementation in `3rdparty/Eigen` is licensed under the Mozilla Public License version 2.0.
 See `3rdparty/Eigen/COPYING.MPL2` for the complete license text.
+Note: Incompatible with secondary licenses, will have to go.
 
 The Boost implementation in `3rdparty/boost` is licensed under the Boost Software License version 1.0.
 See `3rdparty/boost/LICENSE_1_0.txt` for the complete license text.
