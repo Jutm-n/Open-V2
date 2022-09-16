@@ -39,5 +39,11 @@ See `lib/GLEW_LICENSE.txt` for the complete license text.
 The Stb Image implementation in `soil` is licensed under the Public Domain.
 See `soil/stb_image.h` for the complete license text.
 
+The SOIL implementation in `soil` is licensed under the Public Domain.
+See `soil/SOIL.h` for the complete license text.
+
 The Image Helper implementation in `soil` is licensed under the MIT License.
 See `soil/image_helper.c` for the complete license text.
+
+The SQLite implementation in `db_wrapper` is licensed under the Public Domain.
+See `db_wrapper/sqlite3.c` for the complete license text.
