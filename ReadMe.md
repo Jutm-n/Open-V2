@@ -1,27 +1,21 @@
 # Open-V2
 
-## Installation Guide
+## 1.0) Installation Guide
 
-#### 1
-Update your visual studio to latest in visual studio installer.
-#### 2
-Copy mod/OpenV2 to your Vic2 folder.
-#### 3
-Build container_generator, gui_window_generator & parser_generator.
-#### 4
-Open file_explorer.cpp, go to line 222,
-change 'E:\\programs\\Victoria2' to the path to your Vic2 folder
+- 1.0) Update your visual studio to latest in visual studio installer.
+- 2.0) Copy mod/OpenV2 to your Vic2 folder.
+- 3.0) Build container_generator, gui_window_generator & parser_generator.
+- 4.0) Open file_explorer.cpp, go to line 222,
+change 'E:\\programs\\Victoria2' to the path to your Vic2 folder,
 make a new folder anywhere and set 'E:\\programs\\V2_scenario' to the path.
-#### 5
-Set file_explorer to startup project and run.
-If it doesn't work try running again.
+- 5.0) Set file_explorer to startup project and run. If it doesn't work try running again.
 
-##Credits
+## 2.0) Credits
 
 -schombert - Creating the original Open V2 project.
 -coderguy57 - Improving schombert's code.
 
-##Licensing
+## 3.0) Licensing
 
 Open V2 is licensed under the GNU General Public License version 3.0.
 For the complete license text, see the file '[LICENSE](./LICENSE)'
