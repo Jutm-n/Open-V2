@@ -1,8 +1,8 @@
 #include "open_gl_wrapper.hpp"
 #define GLEW_STATIC
 
-#include "glew.h"
-#include "wglew.h"
+#include <glew/glew.h>
+#include <glew/wglew.h>
 #include <Windows.h>
 #include <wingdi.h>
 #include <string>

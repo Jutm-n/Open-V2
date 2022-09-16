@@ -1,8 +1,8 @@
 #include "text.h"
 #define GLEW_STATIC
 
-#include "glew.h"
-#include "wglew.h"
+#include <glew/glew.h>
+#include <glew/wglew.h>
 #include <Windows.h>
 #include <wingdi.h>
 #include <optional>
@@ -11,9 +11,9 @@
 #include <ctype.h>
 
 #include "common\\common.h"
-#include "ft2build.h"
-#include "freetype\\freetype.h"
-#include "freetype\\ftglyph.h"
+#include <ft2build.h>
+#include <freetype/freetype.h>
+#include <freetype/ftglyph.h>
 #include "simple_mpl\\simple_mpl.hpp"
 
 #include "concurrency_tools\\concurrency_tools.hpp"

@@ -26,15 +26,15 @@
 #define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING 1
 #define BOOST_ALL_NO_LIB
 
-#include "boost\\container\\flat_map.hpp"
-#include "boost\\container\\small_vector.hpp"
-#include "boost\\container\\flat_set.hpp"
-#include "boost\date_time\\gregorian\\gregorian_types.hpp" 
+#include <boost\container\flat_map.hpp>
+#include <boost\container\small_vector.hpp>
+#include <boost\container\flat_set.hpp>
+#include <boost\date_time\gregorian\gregorian_types.hpp> 
 
 #define EIGEN_INITIALIZE_MATRICES_BY_ZERO
 #define EIGEN_NO_MALLOC
 
-#include "Eigen\\Dense"
+#include <Eigen\Dense>
 
 #ifdef __llvm__
 #pragma clang diagnostic pop

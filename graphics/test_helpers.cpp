@@ -1,7 +1,7 @@
 #include "test_helpers.h"
 #include "v2_window.hpp"
 #include "open_gl_wrapper.hpp"
-#include "soil\\SOIL.h"
+#include <SOIL/SOIL.h>
 
 #include <string>
 #include <Windows.h>

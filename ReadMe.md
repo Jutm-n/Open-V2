@@ -48,3 +48,6 @@ See `3rdparty/IMG_Helper/image_helper.c` and `3rdparty/IMG_Helper/image_DXT.c` f
 
 The SQLite implementation in `3rdparty/SQLite` is licensed under the Public Domain.
 See `3rdparty/SQLite/sqlite3.c` for the complete license text.
+
+The Google Test implementation in `3rdparty/gtest` is licensed under the BSD 3-clause License.
+See `3rdparty/gtest/gtest.h` for the complete license text.

@@ -1,8 +1,8 @@
 #include "lines.h"
 #define GLEW_STATIC
 
-#include "glew.h"
-#include "wglew.h"
+#include <glew/glew.h>
+#include <glew/wglew.h>
 
 namespace graphics {
 	void lines::set_y(float* v) {

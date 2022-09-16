@@ -7,7 +7,7 @@
 #pragma clang diagnostic ignored "-Wundef"
 #endif
 
-#include "sqlite3.h"
+#include <SQLite/sqlite3.h>
 #ifdef __llvm__
 #pragma clang diagnostic pop
 #endif

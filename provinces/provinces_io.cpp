@@ -3,7 +3,7 @@
 #include "Parsers\\parsers.hpp"
 #include "object_parsing\\object_parsing.hpp"
 #include "modifiers\\modifiers_io.h"
-#include "soil\\SOIL.h"
+#include <SOIL/SOIL.h>
 #include <Windows.h>
 #undef max
 #undef min

@@ -6,7 +6,7 @@
 #include "object_parsing\\object_parsing.hpp"
 #include "Parsers\\parsers.hpp"
 #include "gui\\gui.hpp"
-#include "soil\\SOIL.h"
+#include <SOIL/SOIL.h>
 #include "graphics\\world_map.h"
 #include <Windows.h>
 #include "scenario\\scenario.h"

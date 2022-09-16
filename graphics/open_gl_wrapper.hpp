@@ -14,6 +14,7 @@ namespace graphics {
 
 			do {
 				//if we want to slow down to 30 fps ...
+				//Will add once i implement (or find) a settings.txt reader.
 				//const auto start_time = std::chrono::steady_clock::now();
 
 				_this->clear();

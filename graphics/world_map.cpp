@@ -2,8 +2,8 @@
 #include "concurrency_tools\\concurrency_tools.hpp"
 #define GLEW_STATIC
 
-#include "glew.h"
-#include "wglew.h"
+#include <glew/glew.h>
+#include <glew/wglew.h>
 #include <Windows.h>
 #undef min
 #undef max
@@ -11,7 +11,7 @@
 #include <deque>
 
 #include "provinces\\provinces.h"
-#include "soil\\SOIL.h"
+#include <SOIL/SOIL.h>
 #include <thread>
 #include "world_state\\world_state.h"
 #include "economy\\economy_functions.h"

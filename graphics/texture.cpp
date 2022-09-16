@@ -1,13 +1,13 @@
 #include "texture.h"
 #define GLEW_STATIC
 
-#include "glew.h"
-#include "wglew.h"
+#include <glew/glew.h>
+#include <glew/wglew.h>
 #include <Windows.h>
 #include <wingdi.h>
 #include <thread>
 
-#include "soil\\SOIL.h"
+#include <SOIL/SOIL.h>
 
 namespace graphics {
 	texture::texture(const std::string& fn) : filename(fn) {};
