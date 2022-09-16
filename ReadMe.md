@@ -21,29 +21,29 @@ Open V2 is licensed under the GNU General Public License version 3.0.
 For the complete license text, see the file '[LICENSE](./LICENSE)'
 This license applies to all files in this distribution, except as noted below.
 
-The Eigen implementation in `Eigen` is licensed under the Mozilla Public License version 2.0.
-See `Eigen/COPYING.MPL2` for the complete license text.
+The Eigen implementation in `3rdparty/Eigen` is licensed under the Mozilla Public License version 2.0.
+See `3rdparty/Eigen/COPYING.MPL2` for the complete license text.
 
-The Boost implementation in `lib/boost` is licensed under the Boost Software License version 1.0.
-See `lib/boost/LICENSE_1_0.txt` for the complete license text.
+The Boost implementation in `3rdparty/boost` is licensed under the Boost Software License version 1.0.
+See `3rdparty/boost/LICENSE_1_0.txt` for the complete license text.
 
-The Freetype implementation in `lib/freetype` is licensed under the Freetype Project License.
-See `lib/freetype/FTL.txt` for the complete license text.
+The Freetype implementation in `3rdparty/freetype` is licensed under the Freetype Project License.
+See `3rdparty/freetype/FTL.txt` for the complete license text.
 
-The Zlib implementation in `lib/zlib` is licensed under the zlib License.
-See `lib/zlib/README` for the complete license text.
+The Zlib implementation in `3rdparty/zlib` is licensed under the zlib License.
+See `3rdparty/zlib/README` for the complete license text.
 
-The GLEW implementation in `lib`, `soil` and `graphics` is licensed under the Mesa-3D License.
-See `lib/GLEW_LICENSE.txt` for the complete license text.
+The GLEW implementation in `3rdparty/glew` is licensed under the Mesa-3D License.
+See `3rdparty/glew/LICENSE.txt` for the complete license text.
 
-The Stb Image implementation in `soil` is licensed under the Public Domain.
-See `soil/stb_image.h` for the complete license text.
+The Stb Image implementation in `3rdparty/STB_Image` is licensed under the Public Domain.
+See `3rdparty/STB_Image/stb_image.h` for the complete license text.
 
-The SOIL implementation in `soil` is licensed under the Public Domain.
-See `soil/SOIL.h` for the complete license text.
+The SOIL implementation in `3rdparty/SOIL` is licensed under the Public Domain.
+See `3rdparty/SOIL/SOIL.h` for the complete license text.
 
-The Image Helper implementation in `soil` is licensed under the MIT License.
-See `soil/image_helper.c` for the complete license text.
+The Image Helper and Image DXT implementations in `3rdparty/IMG_Helper` are licensed under the MIT License and Public Domain respectively.
+See `3rdparty/IMG_Helper/image_helper.c` and `3rdparty/IMG_Helper/image_DXT.c` for the complete license texts.
 
-The SQLite implementation in `db_wrapper` is licensed under the Public Domain.
-See `db_wrapper/sqlite3.c` for the complete license text.
+The SQLite implementation in `3rdparty/SQLite` is licensed under the Public Domain.
+See `3rdparty/SQLite/sqlite3.c` for the complete license text.
