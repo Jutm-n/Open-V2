@@ -12,8 +12,8 @@ make a new folder anywhere and set 'E:\\programs\\V2_scenario' to the path.
 
 ## 2.0) Credits
 
--schombert - Creating the original Open V2 project.
--coderguy57 - Improving schombert's code.
+- schombert - Creating the original Open V2 project.
+- coderguy57 - Improving schombert's code.
 
 ## 3.0) Licensing
 
